@@ -1,0 +1,364 @@
+/* ===== Tampilan dasar CoSpace ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 15px;
+    color: #1f2933;
+    background: #f3f5f7;
+}
+
+a {
+    color: #1f6f78;
+}
+
+/* ----- Navbar ----- */
+.navbar {
+    background: #1f4e5f;
+    color: white;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 14px 0;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.navbar .menu a {
+    color: #dbe9ec;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.navbar .menu a:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+}
+
+.navbar .menu form {
+    margin: 0;
+}
+
+.navbar .menu button {
+    background: none;
+    border: 1px solid #8fb3bb;
+    color: #dbe9ec;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+/* ----- Konten ----- */
+.container {
+    max-width: 1100px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0 0 4px;
+}
+
+.subjudul {
+    color: #627080;
+    margin: 0 0 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin: 0 0 12px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+}
+
+.stat {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.stat .card {
+    margin: 0;
+}
+
+.stat .angka {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1f4e5f;
+}
+
+.stat .label {
+    color: #627080;
+}
+
+/* ----- Kartu ruang di katalog ----- */
+.ruang-card .jenis {
+    display: inline-block;
+    font-size: 12px;
+    background: #e3f1f2;
+    color: #1f6f78;
+    padding: 3px 8px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+}
+
+.ruang-card h3 {
+    margin: 0 0 8px;
+}
+
+.ruang-card .harga {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1f4e5f;
+    margin: 10px 0;
+}
+
+.ruang-card p {
+    margin: 4px 0;
+    color: #4a5866;
+}
+
+/* ----- Form ----- */
+label {
+    display: block;
+    font-weight: 600;
+    margin: 12px 0 4px;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=number],
+input[type=date], select {
+    width: 100%;
+    padding: 9px 10px;
+    border: 1px solid #c8d1d9;
+    border-radius: 6px;
+    font-size: 15px;
+    background: white;
+}
+
+.form-baris {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.form-baris > div {
+    flex: 1;
+    min-width: 150px;
+}
+
+.checkbox label {
+    display: inline;
+    font-weight: normal;
+}
+
+/* ----- Tombol ----- */
+.btn {
+    display: inline-block;
+    padding: 9px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #1f6f78;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #185a62;
+}
+
+.btn-kecil {
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+.btn-abu {
+    background: #6b7785;
+}
+
+.btn-merah {
+    background: #c0392b;
+}
+
+.btn-merah:hover {
+    background: #a5281b;
+}
+
+.btn-hijau {
+    background: #2e8b57;
+}
+
+.aksi form {
+    display: inline;
+}
+
+/* ----- Tabel ----- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px 8px;
+    border-bottom: 1px solid #e3e8ec;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #f0f4f6;
+    font-size: 13px;
+    color: #4a5866;
+}
+
+.tabel-scroll {
+    overflow-x: auto;
+}
+
+/* ----- Badge status ----- */
+.badge {
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge-menunggu {
+    background: #fff3cd;
+    color: #8a6d00;
+}
+
+.badge-aktif {
+    background: #d4edda;
+    color: #1e6b34;
+}
+
+.badge-selesai {
+    background: #dde7f5;
+    color: #2b4c7e;
+}
+
+.badge-batal {
+    background: #f8d7da;
+    color: #8a1f2b;
+}
+
+/* ----- Pesan ----- */
+.alert {
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.alert-sukses {
+    background: #d4edda;
+    color: #1e6b34;
+}
+
+.alert-error {
+    background: #f8d7da;
+    color: #8a1f2b;
+}
+
+/* ----- Halaman login / register ----- */
+.auth-box {
+    max-width: 420px;
+    margin: 60px auto;
+}
+
+.auth-box .logo-besar {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #1f4e5f;
+    margin-bottom: 4px;
+}
+
+.auth-box .tagline {
+    text-align: center;
+    color: #627080;
+    margin-bottom: 20px;
+}
+
+.auth-box .btn {
+    width: 100%;
+    margin-top: 18px;
+}
+
+.info-akun {
+    font-size: 13px;
+    color: #627080;
+    margin-top: 14px;
+}
+
+/* ----- Jadwal ruang ----- */
+.jadwal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.slot {
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    background: #e3f1f2;
+    color: #1f6f78;
+}
+
+.slot-terisi {
+    background: #f8d7da;
+    color: #8a1f2b;
+}
+
+.footer {
+    text-align: center;
+    color: #8a96a3;
+    font-size: 13px;
+    padding: 24px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 0 12px;
+    }
+    .container {
+        margin-top: 16px;
+    }
+}

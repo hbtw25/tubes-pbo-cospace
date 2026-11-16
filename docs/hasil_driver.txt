@@ -1,0 +1,35 @@
+===== 1. AKUN =====
+Register Budi, role: MEMBER
+Register email sama -> Email sudah terdaftar
+Register password pendek -> Password minimal 8 karakter
+Login benar: true
+Login salah: false
+Ubah password: true
+Login password baru: true
+
+===== 2. RUANG =====
+Hot Desk 3 jam       : 45000.0 (harus 45000)
+Ruang Privat 8 jam   : 340000.0 (harus 340000)
+Ruang Meeting 2 jam  : 225000.0 (harus 225000)
+Filter kapasitas >= 4: 2 ruang (harus 2)
+Setelah hot desk dinonaktifkan: 2 ruang aktif (harus 2)
+
+===== 3. RESERVASI & PROMO =====
+Reservasi 1 dibuat, status: Menunggu Pembayaran, total: 150000.0
+Pakai promo HEMAT10: true, total jadi: 135000.0 (harus 135000)
+Reservasi jam 11-13 -> Jadwal bentrok dengan reservasi lain (Ruang Privat Melati)
+Jam 12-14 tersedia: true (harus true)
+Reservasi tanggal kemarin -> Tanggal reservasi tidak boleh lampau
+
+===== 4. PEMBAYARAN & LAPORAN =====
+Bayar transfer tanpa bukti: false
+Bayar transfer lengkap    : true
+Status reservasi: Aktif, metode: Transfer Bank
+Bayar tunai 300000, kembalian: 75000.0 (harus 75000)
+Reservasi 3 dibatalkan, status bayar: Direfund, refund: 24000.0 (harus 24000)
+Reservasi 2 selesai, poin Budi: 22 (harus 22)
+Jumlah reservasi        : 2 (harus 2)
+Total refund            : 24000.0 (harus 24000)
+Pendapatan bersih       : 366000.0 (harus 366000)
+Pendapatan Ruang Meeting: 225000.0
+Ruang terpopuler        : Ruang Privat Melati
